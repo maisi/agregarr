@@ -116,7 +116,7 @@
     "yamljs": "0.3.0",
     "youtube-search-without-api-key": "^2.0.7",
     "yup": "0.32.11",
-    "zod": "3.20.6"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@babel/cli": "7.21.0",
