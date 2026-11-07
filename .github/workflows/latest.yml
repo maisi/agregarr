@@ -40,7 +40,7 @@ jobs:
     name: Build ${{ matrix.platform }}
     runs-on: ${{ matrix.runner }}
     needs: version-check
-    if: needs.version-check.outputs.new_release_published == 'true'
+    if: github.repository == 'agregarr/agregarr' && needs.version-check.outputs.new_release_published == 'true'
     permissions:
       packages: write
       contents: read
@@ -94,6 +94,7 @@ jobs:
           retention-days: 1
 
   merge:
+    if: github.repository == 'agregarr/agregarr'
     name: Create multi-platform manifest
     runs-on: ubuntu-22.04
     needs:
@@ -150,6 +151,7 @@ jobs:
           docker buildx imagetools inspect agregarr/agregarr:latest
 
   release:
+    if: github.repository == 'agregarr/agregarr'
     name: Create release
     runs-on: ubuntu-22.04
     needs:
@@ -179,6 +181,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   discord:
+    if: github.repository == 'agregarr/agregarr'
     name: Discord Notification
     runs-on: ubuntu-22.04
     needs:
