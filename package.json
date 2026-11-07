@@ -107,7 +107,7 @@
     "swagger-ui-express": "4.6.2",
     "swr": "2.0.4",
     "tough-cookie": "^6.0.0",
-    "typeorm": "0.3.28",
+    "typeorm": "0.3.31",
     "ua-parser-js": "1.0.35",
     "web-push": "3.5.0",
     "winston": "3.8.2",
