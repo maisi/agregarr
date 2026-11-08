@@ -9,40 +9,29 @@
   "packageRules": [
     {
       "description": "Group routine minor and patch updates",
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "minor and patch dependencies",
       "groupSlug": "minor-patch"
     },
     {
-      "matchManagers": [
-        "github-actions"
-      ],
+      "matchManagers": ["github-actions"],
       "groupName": "GitHub Actions",
       "groupSlug": "github-actions"
     },
     {
-      "matchPackageNames": [
-        "node"
-      ],
+      "matchPackageNames": ["node"],
       "groupName": "Node.js",
       "groupSlug": "node"
     },
     {
       "description": "Isolate every major update from all inherited and local groups",
-      "matchUpdateTypes": [
-        "major"
-      ],
+      "matchUpdateTypes": ["major"],
       "groupName": null,
       "groupSlug": null
     },
     {
       "description": "Require human merging for every dependency",
-      "matchPackageNames": [
-        "*"
-      ],
+      "matchPackageNames": ["*"],
       "automerge": false
     },
     {
@@ -51,9 +40,7 @@
         "isVulnerabilityAlert = true and $not(enabled = false) and $not($exists(skipReason))"
       ],
       "enabled": true,
-      "schedule": [
-        "at any time"
-      ],
+      "schedule": ["at any time"],
       "prCreation": "immediate",
       "groupName": null,
       "groupSlug": null,
@@ -65,25 +52,19 @@
     }
   ],
   "timezone": "Europe/Vienna",
-  "schedule": [
-    "before 7am on monday"
-  ],
+  "schedule": ["before 7am on monday"],
   "prConcurrentLimit": 3,
   "prHourlyLimit": 2,
   "dependencyDashboard": true,
   "automerge": false,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": [
-      "before 7am on monday"
-    ],
+    "schedule": ["before 7am on monday"],
     "automerge": false
   },
   "vulnerabilityAlerts": {
     "enabled": true,
-    "schedule": [
-      "at any time"
-    ],
+    "schedule": ["at any time"],
     "automerge": false,
     "groupName": null,
     "groupSlug": null,
