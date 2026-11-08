@@ -22,7 +22,8 @@
     "prepare": "husky install",
     "cypress:open": "cypress open",
     "cypress:prepare": "ts-node -r tsconfig-paths/register --files --project server/tsconfig.json server/scripts/prepareTestDb.ts",
-    "cypress:build": "yarn build && yarn cypress:prepare"
+    "cypress:build": "yarn build && yarn cypress:prepare",
+    "test:trailer": "node --test scripts/trailer-download.test.cjs"
   },
   "repository": {
     "type": "git",
@@ -114,7 +115,6 @@
     "winston-daily-rotate-file": "4.7.1",
     "xml2js": "0.6.2",
     "yamljs": "0.3.0",
-    "youtube-search-without-api-key": "^2.0.7",
     "yup": "0.32.11",
     "zod": "3.20.6"
   },
