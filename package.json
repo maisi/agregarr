@@ -74,7 +74,7 @@
     "konva": "^9.3.14",
     "lodash": "4.17.21",
     "nanoid": "^5.1.5",
-    "next": "12.3.4",
+    "next": "15.5.28",
     "node-cache": "5.1.2",
     "node-gyp": "9.3.1",
     "node-schedule": "2.1.1",
