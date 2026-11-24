@@ -5,6 +5,7 @@ import { randomUUID } from 'crypto';
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
+import type { Sharp } from 'sharp';
 import sharp from 'sharp';
 import {
   generatePosterBuffer,
@@ -257,7 +258,7 @@ export async function savePosterFile(
     counter++;
   }
 
-  let image: sharp.Sharp | null = null;
+  let image: Sharp | null = null;
   try {
     // Security: Validate the image buffer with Sharp (this also prevents malicious files)
     image = sharp(fileBuffer);

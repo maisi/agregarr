@@ -16,7 +16,7 @@ import {
 import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
 import { Router } from 'express';
-import type sharp from 'sharp';
+import type { OverlayOptions } from 'sharp';
 
 const overlayTestRouter = Router();
 
@@ -419,7 +419,7 @@ overlayTestRouter.post('/', async (req, res) => {
 
     const { width: posterWidth, height: posterHeight } =
       await overlayTemplateRenderer.getPosterDimensions(posterBuffer);
-    const allOverlays: sharp.OverlayOptions[] = [];
+    const allOverlays: OverlayOptions[] = [];
 
     for (const template of matchingTemplates) {
       const templateData = template.getTemplateData();

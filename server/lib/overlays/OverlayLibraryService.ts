@@ -11,7 +11,7 @@ import logger from '@server/logger';
 import fs from 'fs/promises';
 import os from 'os';
 import path from 'path';
-import type sharp from 'sharp';
+import type { OverlayOptions } from 'sharp';
 import {
   buildRenderContext,
   checkMonitoringStatus,
@@ -1010,7 +1010,7 @@ class OverlayLibraryService {
       // then composite everything in a single sharp operation.
       // This avoids repeated lossy WebP decode/encode cycles between templates.
       let templatesApplied = 0;
-      const allOverlays: sharp.OverlayOptions[] = [];
+      const allOverlays: OverlayOptions[] = [];
 
       // Get poster dimensions once (shared across all templates)
       const { width: posterWidth, height: posterHeight } =
