@@ -48,7 +48,7 @@
     "@types/ua-parser-js": "0.7.36",
     "ace-builds": "1.15.2",
     "archiver": "^7.0.1",
-    "axios": "1.3.4",
+    "axios": "1.20.0",
     "axios-cookiejar-support": "^6.0.5",
     "axios-rate-limit": "1.3.0",
     "bcrypt": "5.1.0",
@@ -72,18 +72,18 @@
     "intl": "1.2.5",
     "jsdom": "^26.1.0",
     "konva": "^9.3.14",
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "nanoid": "^5.1.5",
     "next": "15.5.29",
     "node-cache": "5.1.2",
     "node-gyp": "9.3.1",
     "node-schedule": "2.1.1",
     "node-stream-zip": "^1.15.0",
-    "nodemailer": "6.9.1",
+    "nodemailer": "10.1.4",
     "play-dl": "^1.9.7",
     "playwright": "^1.57.0",
     "plex-api": "5.3.2",
-    "pug": "3.0.2",
+    "pug": "3.0.3",
     "react": "18.2.0",
     "react-ace": "10.1.0",
     "react-animate-height": "2.1.2",
@@ -102,7 +102,7 @@
     "react-use-clipboard": "1.0.9",
     "reflect-metadata": "0.1.13",
     "secure-random-password": "0.2.3",
-    "semver": "7.3.8",
+    "semver": "7.5.2",
     "sharp": "^0.34.3",
     "sqlite3": "5.1.7",
     "swagger-ui-express": "4.6.2",
@@ -116,7 +116,7 @@
     "xml2js": "0.6.2",
     "yamljs": "0.3.0",
     "yup": "0.32.11",
-    "zod": "3.20.6"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@babel/cli": "7.21.0",
@@ -193,7 +193,11 @@
     "@types/express-session": "1.17.6",
     "**/request/form-data": "2.5.6",
     "**/@cypress/request/form-data": "2.5.6",
-    "**/tar": "7.5.19"
+    "**/tar": "7.5.19",
+    "**/express-openapi-validator/multer": "^2.3.0",
+    "**/mailparser/linkify-it": "^5.0.2",
+    "**/external-editor/tmp": "^0.2.6",
+    "**/simple-update-notifier/semver": "^7.5.2"
   },
   "config": {
     "commitizen": {
