@@ -193,7 +193,11 @@
     "@types/express-session": "1.17.6",
     "**/request/form-data": "2.5.6",
     "**/@cypress/request/form-data": "2.5.6",
-    "**/tar": "7.5.19"
+    "**/tar": "7.5.19",
+    "**/express-openapi-validator/multer": "^2.3.0",
+    "**/mailparser/linkify-it": "^5.0.2",
+    "**/external-editor/tmp": "^0.2.6",
+    "**/simple-update-notifier/semver": "^7.5.2"
   },
   "config": {
     "commitizen": {
