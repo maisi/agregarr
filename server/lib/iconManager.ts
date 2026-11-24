@@ -324,7 +324,7 @@ export async function downloadIcon(
     });
 
     const buffer = Buffer.from(response.data);
-    const contentType = response.headers['content-type'] || 'image/png';
+    const contentType = String(response.headers['content-type'] || 'image/png');
 
     // Validate content type
     if (!ALLOWED_ICON_TYPES.includes(contentType)) {

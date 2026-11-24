@@ -522,7 +522,9 @@ export async function downloadAndSavePoster(
     });
 
     // Get content type
-    const contentType = response.headers['content-type'] || 'image/jpeg';
+    const contentType = String(
+      response.headers['content-type'] || 'image/jpeg'
+    );
 
     // Validate content type
     if (!ALLOWED_MIME_TYPES.includes(contentType)) {
